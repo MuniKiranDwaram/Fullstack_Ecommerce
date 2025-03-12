@@ -130,7 +130,7 @@ const HomePageProducts = () => {
         <p className='w-auto text-[15px] text-gray-500 text-center font-bold self-center underline'>Rating-({product.rating?.rate || "No rating"})</p>
         <p className='w-[50px] text-[20px] font-bold text-orange-600'>&#x20B9;{product.price}</p>
         <div className='h-auto flex flex-col items-center justify-center w-full'>
-            <p className='bg-gray-500 cursor-pointer text-white rounded-md text-center w-auto min-w-[100px]' onClick={()=>HandleAddToCart(product.id,product.image,product.price,product.title,product.description)}>Add to cart</p>
+            <p className='bg-gray-500 cursor-pointer text-white rounded-md text-center w-auto min-w-[100px] active:bg-gray-600' onClick={()=>HandleAddToCart(product.id,product.image,product.price,product.title,product.description)}>Add to cart</p>
             <p className='w-auto text-[25px] mx-2 text-center font-bold self-center min-w-5 text-orange-500'>{cartData.find(item => item.id === product.id)?.quantity || ""}</p>
         </div>
         <p className='w-auto text-[15px] text-center font-bold self-center underline cursor-pointer'><Link to='/cart'>Go to Cart</Link></p>
