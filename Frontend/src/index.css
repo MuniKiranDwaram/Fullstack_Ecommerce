@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    box-shadow: none;
+    width: 100%;
+}
+  
+  .flex::-webkit-scrollbar {
+    display: none; /* This will hide the scrollbar */
+  }
+  
+  /* Optional: If you want to support other browsers */
+  .flex {
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    scrollbar-width: none;     /* For Firefox */
+  }
